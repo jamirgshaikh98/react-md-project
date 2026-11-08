@@ -1,0 +1,106 @@
+
+:root {
+    --maincolor: #8b008b;
+    --maincolor-dark: #5c005c;
+}
+
+header {
+    background-color: var(--maincolor);
+}
+
+.Container {
+    width: min(95%, 1200px);
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    min-height: 82px;
+}
+
+.logo {
+    width: 130px;
+    padding: 0.5em 0;
+}
+
+.LogoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 96px;
+}
+
+.header-image {
+    width: 88px;
+    height: 56px;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    object-fit: contain;
+    display: block;
+    background: #fff;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.listname {
+    padding: 0.6rem 0.75rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+}
+
+.listname:hover,
+.listitem-active {
+    background-color: var(--maincolor-dark);
+}
+
+.Icones {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.Icone {
+    font-size: 1.35rem !important;
+    margin-left: 0.75rem;
+}
+
+@media screen and (max-width: 800px) {
+    .container-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.75rem 0;
+    }
+
+    .header-image {
+        width: 76px;
+        height: 48px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .list {
+        width: 100%;
+    }
+
+    .listname {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .Icones {
+        display: none;
+    }
+}
