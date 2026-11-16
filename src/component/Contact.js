@@ -13,6 +13,7 @@ const Contact = () => {
         <h2>Our Details</h2>
         <p>📍Name: MD Fruits,Sangola</p>
         <p>📍 Address: In front of Sadanand Hotel, Miraj Road Sangola, Dist-Solapur,Maharshtra, India</p>
+        <p>📞 Phone: <a href="tel:7038299786">7038299786</a></p>
         {/* <p>✉️ Email: </p> */}
       </div>
     </div>
